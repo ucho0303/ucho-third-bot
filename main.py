@@ -51,12 +51,13 @@ def handle_message(event):
             TextSendMessage(text='そのようなタグの記事は存在しませんでした')
             )
     else:
+        text = ''
         for i in range(n):
-            text = trends[0][i] + '\n' + trends[1][i]
-            line_bot_api.reply_message(
-                event.reply_token,
-                TextSendMessage(text=text)
-                )
+            text += trends[0][i] + '\n' + trends[1][i]
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=text)
+            )
 
 if __name__ == "__main__":
 #    app.run()
