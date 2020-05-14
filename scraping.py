@@ -1,12 +1,12 @@
 import time
 from selenium import webdriver
-import os
+#import os
 
 def scraping(query='python'):
-    path = os.getcwd() + '/chromedriver'
+    #path = os.getcwd() + '/chromedriver'
 
     options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(path,options=options)
+    driver = webdriver.Chrome(options=options)
     try:
         driver.get('https://qiita.com/tags/' + query + '?page=1')
 
