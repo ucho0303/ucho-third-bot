@@ -53,7 +53,7 @@ def handle_message(event):
     else:
         text = ''
         for i in range(n):
-            text += trends[0][i] + '\n' + trends[1][i]
+            text += trends[0][i] + '\n' + trends[1][i] + '\n'
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text=text)
