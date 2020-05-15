@@ -1,1 +1,1 @@
-lineでなにか打つとqiitaの記事を検索してurlを送ってくれるbot
+なにか打つとqiitaの記事を検索してurlを送ってくれるlinebot
